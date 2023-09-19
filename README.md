@@ -31,6 +31,12 @@ Contact: <manage@trackingmore.org>
 </dependency>
 ```
 
+### Gradle
+
+```
+implementation "com.trackingmore:trackingmore-sdk-java:1.0.0"
+```
+
 
 ## Quick Start
 
