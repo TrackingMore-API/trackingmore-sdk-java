@@ -27,7 +27,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.trackingmore</groupId>
+      <groupId>com.github.TrackingMores</groupId>
       <artifactId>trackingmore-sdk-java</artifactId>
       <version>1.0.0</version>
     </dependency>
