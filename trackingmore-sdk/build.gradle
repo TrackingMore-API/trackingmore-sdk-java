@@ -10,10 +10,7 @@ plugins {
 }
 
 repositories {
-    mavenLocal()
-    maven {
-        url = uri('https://maven.aliyun.com/nexus/content/groups/public/')
-    }
+    mavenCentral()
 }
 
 dependencies {
@@ -23,7 +20,7 @@ dependencies {
     testImplementation 'junit:junit:4.11'
 }
 
-group = 'com.trackingmore'
+group = 'com.github.TrackingMores'
 version = '1.0.0'
 description = 'trackingmore-sdk-java'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
