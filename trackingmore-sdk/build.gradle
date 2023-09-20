@@ -20,7 +20,7 @@ dependencies {
     testImplementation 'junit:junit:4.11'
 }
 
-group = 'com.github.TrackingMores'
+group = 'io.github.TrackingMores'
 version = '1.0.0'
 description = 'trackingmore-sdk-java'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
