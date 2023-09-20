@@ -4,11 +4,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.trackingmore</groupId>
+  <groupId>com.github.TrackingMores</groupId>
   <artifactId>trackingmore-sdk-java</artifactId>
   <version>1.0.0</version>
 
   <name>trackingmore</name>
+  <description>The Java SDK of Trackingmore API</description>
   <!-- FIXME change it to the project's website -->
   <url>https://github.com/TrackingMores/trackingmore-sdk-java</url>
 
