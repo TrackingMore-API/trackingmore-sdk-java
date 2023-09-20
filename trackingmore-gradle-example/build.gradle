@@ -6,14 +6,13 @@ group 'com.trackingmore.gradle.example'
 version '1.0-SNAPSHOT'
 
 repositories {
-    mavenLocal()
-    maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+    mavenCentral()
 }
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    implementation "com.trackingmore:trackingmore-sdk-java:1.0.0"
+    implementation 'com.github.TrackingMores:trackingmore-sdk-java:1.0.0'
 }
 
 test {
@@ -22,5 +21,4 @@ test {
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
-    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
 }
