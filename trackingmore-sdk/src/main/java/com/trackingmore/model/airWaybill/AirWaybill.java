@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.util.List;
+import java.util.Map;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -38,7 +39,7 @@ public class AirWaybill {
     private FlightInfoNew[] flightInfoNew;
 
     @JsonProperty("flight_info")
-    private FlightInfo flightInfo;
+    private Map<String, FlightInfo> FlightInfo;
 
     @JsonProperty("track_info")
     private TrackInfo[] trackInfo;
