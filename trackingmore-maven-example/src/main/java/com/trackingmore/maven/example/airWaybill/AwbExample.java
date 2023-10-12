@@ -23,6 +23,7 @@ public class AwbExample {
                 System.out.println(airWaybills);
                 System.out.println(airWaybills.getAwbNumber());
                 System.out.println(airWaybills.getAirlineInfo().getName());
+                System.out.println(airWaybills.getFlightInfo().get("TK0721").getDepartStation());
             }
 
         } catch (TrackingMoreException e) {
