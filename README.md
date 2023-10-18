@@ -25,8 +25,8 @@ Contact: <manage@trackingmore.org>
 
 ```
 <dependency>
-   <groupId>com.trackingmore</groupId>
-   <artifactId>trackingmore</artifactId>
+   <groupId>io.github.trackingmores</groupId>
+   <artifactId>trackingmore-sdk-java</artifactId>
    <version>1.0.1</version>
 </dependency>
 ```
@@ -34,7 +34,7 @@ Contact: <manage@trackingmore.org>
 ### Gradle
 
 ```
-implementation "com.trackingmore:trackingmore-sdk-java:1.0.1"
+implementation "io.github.trackingmores:trackingmore-sdk-java:1.0.1"
 ```
 
 
