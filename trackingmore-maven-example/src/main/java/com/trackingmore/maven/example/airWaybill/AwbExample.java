@@ -14,9 +14,9 @@ public class AwbExample {
         try {
             String apiKey = "you api key";
             TrackingMore trackingMore = new TrackingMore(apiKey);
-            AirWaybillParams detectParams = new AirWaybillParams();
-            detectParams.setAwbNumber("235-69030430");
-            TrackingMoreResponse result = trackingMore.airWaybills.CreateAnAirWayBill(detectParams);
+            AirWaybillParams airWaybillParams = new AirWaybillParams();
+            airWaybillParams.setAwbNumber("235-69030430");
+            TrackingMoreResponse result = trackingMore.airWaybills.CreateAnAirWayBill(airWaybillParams);
             System.out.println(result.getMeta().getCode());
             if(result.getData() != null){
                 AirWaybill airWaybills = (AirWaybill) result.getData();
