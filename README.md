@@ -346,18 +346,22 @@ https://api.trackingmore.com/v4/awb
 try {
    String apiKey = "you api key";
    TrackingMore trackingMore = new TrackingMore(apiKey);
-   AirWaybillParams detectParams = new AirWaybillParams();
-   detectParams.setAwbNumber("235-69030430");
-   TrackingMoreResponse<AirWaybill> result = trackingMore.airWaybills.CreateAnAirWayBill(detectParams);
+   AirWaybillParams airWaybillParams = new AirWaybillParams();
+   airWaybillParams.setAwbNumber("235-69030430");
+   TrackingMoreResponse result = trackingMore.airWaybills.CreateAnAirWayBill(airWaybillParams);
    System.out.println(result.getMeta().getCode());
-   AirWaybill airWaybills = result.getData();
-   System.out.println(airWaybills);
-   System.out.println(airWaybills.getAwbNumber());
-   System.out.println(airWaybills.getAirlineInfo().getName());
+   if(result.getData() != null){
+      AirWaybill airWaybills = (AirWaybill) result.getData();
+      System.out.println(airWaybills);
+      System.out.println(airWaybills.getAwbNumber());
+      System.out.println(airWaybills.getAirlineInfo().getName());
+      System.out.println(airWaybills.getFlightInfo().get("TK0721").getDepartStation());
+   }
+
 } catch (TrackingMoreException e) {
-   System.err.println("error：" + e.getMessage());
+    System.err.println("error：" + e.getMessage());
 } catch (IOException e) {
-   System.err.println("error：" + e.getMessage());
+    System.err.println("error：" + e.getMessage());
 }
 
 ```
