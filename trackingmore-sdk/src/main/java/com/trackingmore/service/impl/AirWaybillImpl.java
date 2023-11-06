@@ -10,6 +10,8 @@ import com.trackingmore.service.AirWaybills;
 import com.trackingmore.utils.StrUtils;
 
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class AirWaybillImpl extends BaseTracking implements AirWaybills {
 
@@ -17,9 +19,13 @@ public class AirWaybillImpl extends BaseTracking implements AirWaybills {
         if(StrUtils.isEmpty(airWaybillParams.getAwbNumber())) {
             throw new TrackingMoreException(ErrorEnums.ErrMissingAwbNumber);
         }
-        if(airWaybillParams.getAwbNumber().length() != 12) {
+
+        Pattern pattern = Pattern.compile("^\\d{3}[ -]?(\\d{8})$");
+        Matcher matcher = pattern.matcher(airWaybillParams.getAwbNumber());
+        if(!matcher.matches()) {
             throw new TrackingMoreException(ErrorEnums.ErrInvalidAirWaybillFormat);
         }
+
         String apiPath =  "/awb";
         String body = requestHelper.sendApiRequest(apiPath, "POST", null,  airWaybillParams);
         TrackingMoreResponse response = objectMapper.readValue(body, new TypeReference<TrackingMoreResponse<AirWaybill>>() {});
