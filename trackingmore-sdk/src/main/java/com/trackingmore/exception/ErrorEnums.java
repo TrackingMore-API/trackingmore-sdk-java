@@ -7,7 +7,7 @@ public class ErrorEnums {
     public static final String ErrMissingAwbNumber           = "Awb number cannot be empty";
     public static final String ErrMaxTrackingNumbersExceeded = "Max. 40 tracking numbers create in one call";
     public static final String ErrEmptyId                    = "Id cannot be empty";
-    public static final String ErrInvalidAirWaybillFormat    = "The air waybill number format is invalid and can only be 12 digits in length";
+    public static final String ErrInvalidAirWaybillFormat    = "The air waybill number format is invalid";
 
     private ErrorEnums() {
 

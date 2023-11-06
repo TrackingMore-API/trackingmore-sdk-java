@@ -6,7 +6,7 @@
 
   <groupId>io.github.trackingmores</groupId>
   <artifactId>trackingmore-sdk-java</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 
   <name>trackingmore</name>
   <description>The Java SDK of Trackingmore API</description>
