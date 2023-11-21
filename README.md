@@ -34,7 +34,7 @@ Contact: <manage@trackingmore.org>
 ### Gradle
 
 ```
-implementation "io.github.trackingmores:trackingmore-sdk-java:1.0.2"
+implementation "io.github.trackingmores:trackingmore-sdk-java:1.0.3"
 ```
 
 
