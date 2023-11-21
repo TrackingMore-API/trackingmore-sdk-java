@@ -1,7 +1,7 @@
 trackingmore-sdk-java
 =================
 
-The Java SDK of Trackingmore API
+The Java SDK of TrackingMore API
 
 Contact: <manage@trackingmore.org>
 
@@ -10,13 +10,13 @@ Contact: <manage@trackingmore.org>
 [Document](https://www.trackingmore.com/docs/trackingmore/d5ac362fc3cda-api-quick-start)
 
 ## Index
-1. [Installation](https://github.com/TrackingMores/trackingmore-sdk-java#installation)
-2. [Testing](https://github.com/TrackingMores/trackingmore-sdk-java#testing)
-3. [Error Handling](https://github.com/TrackingMores/trackingmore-sdk-java#error-handling)
+1. [Installation](https://github.com/TrackingMore-API/trackingmore-sdk-java#installation)
+2. [Testing](https://github.com/TrackingMore-API/trackingmore-sdk-java#testing)
+3. [Error Handling](https://github.com/TrackingMore-API/trackingmore-sdk-java#error-handling)
 4. SDK
-    1. [Couriers](https://github.com/TrackingMores/trackingmore-sdk-java#couriers)
-    2. [Trackings](https://github.com/TrackingMores/trackingmore-sdk-java#trackings)
-    3. [Air Waybill](https://github.com/TrackingMores/trackingmore-sdk-java#air-waybill)
+    1. [Couriers](https://github.com/TrackingMore-API/trackingmore-sdk-java#couriers)
+    2. [Trackings](https://github.com/TrackingMore-API/trackingmore-sdk-java#trackings)
+    3. [Air Waybill](https://github.com/TrackingMore-API/trackingmore-sdk-java#air-waybill)
 
 
 ## Installation
@@ -25,7 +25,7 @@ Contact: <manage@trackingmore.org>
 
 ```
 <dependency>
-   <groupId>io.github.trackingmores</groupId>
+   <groupId>io.github.TrackingMore-API</groupId>
    <artifactId>trackingmore-sdk-java</artifactId>
    <version>1.0.2</version>
 </dependency>
@@ -34,7 +34,7 @@ Contact: <manage@trackingmore.org>
 ### Gradle
 
 ```
-implementation "io.github.trackingmores:trackingmore-sdk-java:1.0.2"
+implementation "io.github.TrackingMore-API:trackingmore-sdk-java:1.0.2"
 ```
 
 
