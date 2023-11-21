@@ -6,12 +6,12 @@
 
   <groupId>io.github.trackingmores</groupId>
   <artifactId>trackingmore-sdk-java</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
 
   <name>trackingmore</name>
   <description>The Java SDK of Trackingmore API</description>
   <!-- FIXME change it to the project's website -->
-  <url>https://github.com/TrackingMores/trackingmore-sdk-java</url>
+  <url>https://github.com/TrackingMore-API/trackingmore-sdk-java</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -53,9 +53,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git@github.com:trackingmores/trackingmore-sdk-java.git</connection>
-    <developerConnection>scm:git:git@github.com:trackingmores/trackingmore-sdk-java.git</developerConnection>
-    <url>git@github.com:trackingmores/trackingmore-sdk-java.git</url>
+    <connection>scm:git:git@github.com:trackingmore-api/trackingmore-sdk-java.git</connection>
+    <developerConnection>scm:git:git@github.com:trackingmore-api/trackingmore-sdk-java.git</developerConnection>
+    <url>git@github.com:trackingmore-api/trackingmore-sdk-java.git</url>
   </scm>
 
   <profiles>
