@@ -11,7 +11,7 @@ public class DeleteTrackingByIDExample {
 
     public static void main(String[] args) {
         try {
-            String apiKey = "you api key";
+            String apiKey = "your api key";
             TrackingMore trackingMore = new TrackingMore(apiKey);
             String idString = "9a28d8ba030596de70c1b0134cdc8b0d";
             TrackingMoreResponse result = trackingMore.trackings.DeleteTrackingByID(idString);

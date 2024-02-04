@@ -13,7 +13,7 @@ public class ListAllCouriersExample {
 
     public static void main(String[] args) {
         try {
-            String apiKey = "you api key";
+            String apiKey = "your api key";
             TrackingMore trackingMore = new TrackingMore(apiKey);
             TrackingMoreResponse result = trackingMore.couriers.getAllCouriers();
             System.out.println(result.getMeta().getCode());

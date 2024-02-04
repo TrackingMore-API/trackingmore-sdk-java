@@ -13,7 +13,7 @@ public class DetectCourierExample {
 
     public static void main(String[] args) {
         try {
-            String apiKey = "you api key";
+            String apiKey = "your api key";
             TrackingMore trackingMore = new TrackingMore(apiKey);
             DetectParams detectParams = new DetectParams();
             detectParams.setTrackingNumber("92642903289511563030094932");

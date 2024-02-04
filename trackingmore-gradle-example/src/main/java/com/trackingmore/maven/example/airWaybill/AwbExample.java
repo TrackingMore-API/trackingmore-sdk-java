@@ -12,7 +12,7 @@ public class AwbExample {
 
     public static void main(String[] args) {
         try {
-            String apiKey = "you api key";
+            String apiKey = "your api key";
             TrackingMore trackingMore = new TrackingMore(apiKey);
             AirWaybillParams airWaybillParams = new AirWaybillParams();
             airWaybillParams.setAwbNumber("235-69030430");

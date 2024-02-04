@@ -13,7 +13,7 @@ public class TrackingResultExample {
 
     public static void main(String[] args) {
         try {
-            String apiKey = "you api key";
+            String apiKey = "your api key";
             TrackingMore trackingMore = new TrackingMore(apiKey);
             GetTrackingResultsParams trackingParams = new GetTrackingResultsParams();
             trackingParams.setTrackingNumbers("92612903029511573030094537,92612903029511573030094531");

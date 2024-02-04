@@ -55,7 +55,7 @@ public class DetectCourierExample {
 
    public static void main(String[] args) {
       try {
-         String apiKey = "you api key";
+         String apiKey = "your api key";
          TrackingMore trackingMore = new TrackingMore(apiKey);
          TrackingMoreResponse<List<Courier>> result = trackingMore.couriers.getAllCouriers();
          System.out.println(result.getMeta().getCode());
@@ -106,7 +106,7 @@ API Key is missing
 ```java
 
 try {
-   String apiKey = "you api key";
+   String apiKey = "your api key";
    TrackingMore trackingMore = new TrackingMore(apiKey);
    DetectParams detectParams = new DetectParams();
    detectParams.setTrackingNumber("");
@@ -128,7 +128,7 @@ Tracking number cannot be empty
 https://api.trackingmore.com/v4/couriers/all
 ```java
 try {
-   String apiKey = "you api key";
+   String apiKey = "your api key";
    TrackingMore trackingMore = new TrackingMore(apiKey);
    TrackingMoreResponse<List<Courier>> result = trackingMore.couriers.getAllCouriers();
    System.out.println(result.getMeta().getCode());
@@ -150,7 +150,7 @@ try {
 https://api.trackingmore.com/v4/couriers/detect
 ```java
 try {
-   String apiKey = "you api key";
+   String apiKey = "your api key";
    TrackingMore trackingMore = new TrackingMore(apiKey);
    DetectParams detectParams = new DetectParams();
    detectParams.setTrackingNumber("92642903289511563030094932");
@@ -175,7 +175,7 @@ try {
 https://api.trackingmore.com/v4/trackings/create
 ```java
 try {
-   String apiKey = "you api key";
+   String apiKey = "your api key";
    TrackingMore trackingMore = new TrackingMore(apiKey);
    CreateTrackingParams createTrackingParams = new CreateTrackingParams();
    createTrackingParams.setTrackingNumber("92612903029511573030094537");
@@ -199,7 +199,7 @@ try {
 https://api.trackingmore.com/v4/trackings/get
 ```java
 try {
-   String apiKey = "you api key";
+   String apiKey = "your api key";
    TrackingMore trackingMore = new TrackingMore(apiKey);
    GetTrackingResultsParams trackingParams = new GetTrackingResultsParams();
    trackingParams.setTrackingNumbers("92612903029511573030094537,92612903029511573030094531");
@@ -228,7 +228,7 @@ try {
 https://api.trackingmore.com/v4/trackings/batch
 ```java
 try {
-   String apiKey = "you api key";
+   String apiKey = "your api key";
    TrackingMore trackingMore = new TrackingMore(apiKey);
    List<CreateTrackingParams> paramsList = new ArrayList<>();
 
@@ -273,7 +273,7 @@ try {
 https://api.trackingmore.com/v4/trackings/update/{id}
 ```java
 try {
-   String apiKey = "you api key";
+   String apiKey = "your api key";
    TrackingMore trackingMore = new TrackingMore(apiKey);
    String idString = "9a035f5cdd0437c55d48e223c705a66c";
    UpdateTrackingParams updateTrackingParams = new UpdateTrackingParams();
@@ -299,7 +299,7 @@ try {
 https://api.trackingmore.com/v4/trackings/delete/{id}
 ```java
 try {
-   String apiKey = "you api key";
+   String apiKey = "your api key";
    TrackingMore trackingMore = new TrackingMore(apiKey);
    String idString = "9a28d8ba030596de70c1b0134cdc8b0d";
    TrackingMoreResponse<Tracking> result = trackingMore.trackings.DeleteTrackingByID(idString);
@@ -322,7 +322,7 @@ try {
 https://api.trackingmore.com/v4/trackings/retrack/{id}
 ```java
 try {
-   String apiKey = "you api key";
+   String apiKey = "your api key";
    TrackingMore trackingMore = new TrackingMore(apiKey);
    String idString = "9a035f5cdd0437c55d48e223c705a66c";
    TrackingMoreResponse<Tracking> result = trackingMore.trackings.RetrackTrackingByID(idString);
@@ -344,7 +344,7 @@ try {
 https://api.trackingmore.com/v4/awb
 ```java
 try {
-   String apiKey = "you api key";
+   String apiKey = "your api key";
    TrackingMore trackingMore = new TrackingMore(apiKey);
    AirWaybillParams airWaybillParams = new AirWaybillParams();
    airWaybillParams.setAwbNumber("235-69030430");

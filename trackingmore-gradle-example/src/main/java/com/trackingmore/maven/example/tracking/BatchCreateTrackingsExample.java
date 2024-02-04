@@ -15,7 +15,7 @@ public class BatchCreateTrackingsExample {
 
     public static void main(String[] args) {
         try {
-            String apiKey = "you api key";
+            String apiKey = "your api key";
             TrackingMore trackingMore = new TrackingMore(apiKey);
             List<CreateTrackingParams> paramsList = new ArrayList<>();
 
