@@ -14,6 +14,12 @@ public class AirWaybill {
     @JsonProperty("awb_number")
     private String awbNumber;
 
+    @JsonProperty("awb_status")
+    private String awbStatus;
+
+    @JsonProperty("awb_substatus")
+    private String awbSubstatus;
+
     @JsonProperty("status_number")
     private String statusNumber;
 

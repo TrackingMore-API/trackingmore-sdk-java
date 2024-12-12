@@ -27,6 +27,9 @@ public class UpdateTrackingParams {
     @JsonProperty("customer_sms")
     private String customerSms;
 
+    @JsonProperty("recipient_postcode")
+    private String recipientPostcode;
+
     @JsonProperty("title")
     private String title;
 
@@ -62,5 +65,11 @@ public class UpdateTrackingParams {
 
     @JsonProperty("note")
     private String note;
+
+    @JsonProperty("label")
+    private String label;
+
+    @JsonProperty("archived_status")
+    private String archivedStatus;
 
 }

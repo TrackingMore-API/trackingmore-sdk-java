@@ -29,7 +29,10 @@ public class TrackInfo {
     @JsonProperty("piece")
     private String piece;
 
-    @JsonProperty("weight")
-    private String weight;
+    @JsonProperty("checkpoint_status")
+    private String checkpointStatus;
+
+    @JsonProperty("checkpoint_substatus")
+    private String checkpointSubstatus;
 
 }

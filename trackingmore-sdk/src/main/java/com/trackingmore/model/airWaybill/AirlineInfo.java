@@ -17,7 +17,7 @@ public class AirlineInfo {
     @JsonProperty("track_url")
     private String trackUrl;
 
-    @JsonProperty("trackpage_url2")
-    private String trackpageUrl2;
+    @JsonProperty("trackpage_url")
+    private String trackpageUrl;
 
 }
