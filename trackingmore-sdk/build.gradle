@@ -21,7 +21,7 @@ dependencies {
 }
 
 group = 'io.github.trackingmores'
-version = '1.0.0'
+version = '1.0.4'
 description = 'trackingmore-sdk-java'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
