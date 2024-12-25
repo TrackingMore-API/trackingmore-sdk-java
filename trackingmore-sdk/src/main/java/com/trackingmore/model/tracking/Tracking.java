@@ -98,6 +98,9 @@ public class Tracking {
     @JsonProperty("note")
     private String note;
 
+    @JsonProperty("label")
+    private String label;
+
     @JsonProperty("signed_by")
     private String signedBy;
 
